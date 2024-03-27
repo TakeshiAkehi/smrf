@@ -1,18 +1,13 @@
-import numpy as np
 import logging
-
-from rasterio.transform import from_origin
-import pandas as pd
-
-from scipy import sparse, interpolate
-from scipy.sparse.linalg import lsqr
-
 import struct
 
-from skimage.morphology import disk
-from skimage.morphology import opening
+import numpy as np
+import pandas as pd
+from rasterio.transform import from_origin
+from scipy import interpolate, sparse
+from scipy.sparse.linalg import lsqr
+from skimage.morphology import disk, opening
 
-# import matplotlib.pyplot as plt
 LOGGER = logging.getLogger(__name__)
 
 
